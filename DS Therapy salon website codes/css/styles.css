@@ -1,0 +1,260 @@
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 137px;
+  background-color: #fdfcfa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #333;
+}
+h1 {
+  margin-bottom: 5%;
+}
+h2 {
+  margin-bottom: 3%;
+}
+p {
+  color: #646463;
+}
+
+/*PORTFLOIO PIC*/
+#portfolio-pic-md {
+  margin-bottom: 3%;
+}
+#portfolio-pic-sm {
+  margin-bottom: 2%;
+}
+
+/*HEADER*/
+.navbar a {
+  font-weight: 300;
+  text-align: center;
+}
+ul.nav a:hover,
+.active {
+  background-color: #3f474e;
+  border-radius: 7px;
+}
+.navbar {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.header-icon {
+  padding: 20px;
+}
+
+/*FOOTER*/
+.social-icon {
+  color: #cbad6c;
+}
+.social-icon:hover {
+  color: #fdfcfa;
+}
+#opening-hours {
+  line-height: 0.3;
+  padding: 0;
+  margin: 0;
+}
+#footer p {
+  color: #a3a3a3;
+}
+
+/*CAROUSEL*/
+.carousel-indicators li {
+  background-color: #585858;
+}
+
+/*CONTAINERS*/
+.container-fluid {
+  padding: 0%;
+}
+
+/*SECTIONS*/
+#section-pricing {
+  background-color: #222831;
+}
+#section-pricing h2 {
+  color: #fdfcfa;
+}
+#section-pricing .card {
+  border: 1px solid #000;
+  margin-bottom: 5%;
+}
+#section-about {
+  margin-bottom: 5%;
+}
+#section-about h3 {
+  margin-top: 5%;
+}
+
+#section-faq a:hover {
+  text-decoration: none;
+}
+#section-gallery {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+/*SECTION-POSITIONING*/
+.section-position-center {
+  text-align: center;
+  padding: 7% 15% 3% 15%;
+}
+
+/*FAQ ACCORDION*/
+/* Horizontal line */
+.collapsible-link::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link::after {
+  content: "";
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded="true"]::after {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded="true"]::before {
+  transform: rotate(180deg);
+}
+
+#faq-last {
+  margin-bottom: 10%;
+}
+
+/*MAP*/
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 100%;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*CALL NOW*/
+#call-now {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  text-align: center;
+  background-color: #cbad6c;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #fdfcfa;
+  text-shadow: 0 1px #333;
+  padding-top: 10px;
+}
+#call-img {
+  padding: 5px;
+  margin-right: 50px;
+}
+
+/*RESPONSIVE BREAKPOINTS*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  #logo-desktop {
+    display: none;
+  }
+  #portfolio-pic-md {
+    display: none;
+  }
+  body {
+    padding-top: 78px;
+  }
+
+  html {
+    font-size: 0.8rem;
+  }
+  #footer {
+    margin-bottom: 60px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #logo-mobile {
+    display: none;
+  }
+  #portfolio-pic-sm {
+    display: none;
+  }
+  html {
+    font-size: 1rem;
+  }
+  #footer {
+    margin-bottom: 60px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  html {
+    font-size: 1.1rem;
+  }
+  #call-now {
+    display: none;
+  }
+  #call-img {
+    display: none;
+  }
+  #footer {
+    margin-bottom: 0px;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .navbar {
+    padding-left: 10%;
+    padding-right: 2%;
+  }
+  #nav-item-contact {
+    margin-right: 50px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.3rem;
+  }
+}
